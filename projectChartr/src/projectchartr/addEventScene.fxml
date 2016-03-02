@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="projectchartr.AddEventSceneController">
+   <children>
+      <VBox alignment="BOTTOM_LEFT" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Name:" />
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Start Date:" />
+                  <DatePicker />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="76.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="End Date:" />
+                  <DatePicker />
+                  <Label text="or" />
+                  <Label text="Duration:" />
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Notes:" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="310.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Milestone:" />
+                  <CheckBox mnemonicParsing="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="330.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Dependency" />
+                  <TreeView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" layoutX="10.0" layoutY="343.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Previous" />
+                  <Button mnemonicParsing="false" text="Next" />
+                  <Button mnemonicParsing="false" text="Submit" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
