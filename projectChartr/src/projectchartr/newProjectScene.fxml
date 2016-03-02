@@ -41,12 +41,12 @@
         </rowConstraints>
          <children>
             <Label text="Project Name: " />
-            <TextField alignment="CENTER_RIGHT" maxWidth="225.0" minWidth="225.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="225.0" translateX="-50.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtProjectName" alignment="CENTER_RIGHT" maxWidth="225.0" minWidth="225.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="225.0" translateX="-50.0" GridPane.columnIndex="1" />
             <Label text="Start Date: " GridPane.rowIndex="1" />
-            <DatePicker maxWidth="225.0" minWidth="225.0" prefWidth="225.0" translateX="-50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <DatePicker fx:id="dpStartDate" maxWidth="225.0" minWidth="225.0" prefWidth="225.0" translateX="-50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="End Date: " GridPane.rowIndex="2" />
-            <DatePicker maxWidth="225.0" minWidth="225.0" prefWidth="225.0" translateX="-50.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" text="Confirm" translateX="110.0" translateZ="20.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <DatePicker fx:id="dpEndDate" maxWidth="225.0" minWidth="225.0" prefWidth="225.0" translateX="-50.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnConfirm"  onAction="#confirmNewProject" mnemonicParsing="false" text="Confirm" translateX="110.0" translateZ="20.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </children>
