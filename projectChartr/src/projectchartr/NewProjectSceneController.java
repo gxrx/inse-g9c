@@ -6,6 +6,7 @@
 package projectchartr;
 
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -27,9 +28,15 @@ public class NewProjectSceneController implements Initializable {
     @FXML private TextField txtProjectName;
     @FXML private Button btnConfirm;
     @FXML private DatePicker dpStartDate, dpEndDate;
-    
+    private LocalDate sDate, eDate;
     @FXML protected void confirmNewProject(ActionEvent e)
     {
+        sDate = dpStartDate.getValue();
+        eDate = dpEndDate.getValue();
+        if(sDate.isAfter(eDate))
+        {
+            System.err.println("Start Date is after End Date");
+        }
         // Check Login Details from DB
         // <SQL Fancy stuff here>
         // Compare Username and Passwords 
