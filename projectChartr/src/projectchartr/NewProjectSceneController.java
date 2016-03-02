@@ -33,6 +33,7 @@ public class NewProjectSceneController implements Initializable {
     {
         sDate = dpStartDate.getValue();
         eDate = dpEndDate.getValue();
+        
         if(sDate.isAfter(eDate))
         {
             System.err.println("Start Date is after End Date");
