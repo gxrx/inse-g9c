@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 
 public class Main {
@@ -40,11 +39,23 @@ public class Main {
         project3.addEvent(2.0, event5);
         System.out.println(project3.getSize()); // expected 1
         project3.addEvent(6.0, event6);
-        System.out.println(project3.getSize()); // expected 2
+        System.out.println(project3.getSize()); // expected 2   
+       
         
-        
-        
-        
+        //testing event depenancies
+        //add dependancy to event1 in project3.
+        //If / else clause will nt be needed if using Drop-downs.
+        Project projectDepTest = new Project("projectDepTest", p ,y);
+        Double x = 7.0;
+        Event eventDepTest = new Event(1.0, "EventDepTest", p, y, "More Notes", false, 1);
+        projectDepTest.addEvent(eventDepTest);
+        if (projectDepTest.checkDuplicate(x) != true) {
+            eventDepTest.addDependancy(x);
+        } else {
+            System.out.println("Cannot add dependancy where there is no Event.");  
+        }        
+        eventDepTest.getEventDependancy();
     }
     }
+
 
