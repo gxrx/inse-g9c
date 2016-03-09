@@ -46,7 +46,7 @@
                <children>
                   <DatePicker promptText="dd/mm/yyyy" />
                   <Label text="or Days:" />
-                  <TextField minWidth="103.0" prefWidth="103.0" promptText="Enter Length" />
+                  <TextField minWidth="107.0" prefHeight="27.0" prefWidth="107.0" promptText="Enter Duration" />
                </children>
             </HBox>
             <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
@@ -54,7 +54,7 @@
                <children>
                   <TextField maxWidth="300.0" prefWidth="200.0" promptText="Enter Event Name" />
                   <Label text="ID:" />
-                  <TextField minWidth="103.0" prefHeight="27.0" prefWidth="103.0" promptText="Enter Event ID" />
+                  <TextField minWidth="107.0" prefHeight="27.0" prefWidth="107.0" promptText="Enter Event ID" />
                </children>
             </HBox>
          </children>
