@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectchartr.AddEventSceneController">
    <children>
       <GridPane layoutX="66.0" layoutY="70.0" prefHeight="329.0" prefWidth="534.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
         <columnConstraints>
@@ -22,7 +24,7 @@
         </rowConstraints>
          <children>
             <Label text="Event Name: " />
-            <DatePicker promptText="dd/mm/yyyy" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <DatePicker fx:id="startDate" promptText="dd/mm/yyyy" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <TextArea prefHeight="200.0" prefWidth="200.0" promptText="Optionally Add Notes Here..." GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="10.0" top="10.0" />
@@ -44,9 +46,9 @@
             <Label text="Dependency: " GridPane.rowIndex="4" />
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <DatePicker promptText="dd/mm/yyyy" />
+                  <DatePicker fx:id="endDate" promptText="dd/mm/yyyy" />
                   <Label text="or Days:" />
-                  <TextField minWidth="107.0" prefHeight="27.0" prefWidth="107.0" promptText="Enter Duration" />
+                  <TextField fx:id="durationField" minWidth="107.0" onMouseClicked="#showDuration" prefHeight="27.0" prefWidth="107.0" promptText="Enter Duration" />
                </children>
             </HBox>
             <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />

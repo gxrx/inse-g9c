@@ -7,7 +7,9 @@ package projectchartr;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.*;
+import javafx.scene.control.*;
+import static java.time.temporal.ChronoUnit.DAYS;
 
 /**
  * FXML Controller class
@@ -22,6 +24,29 @@ public class AddEventSceneController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }   
+    
+    @FXML
+    private DatePicker startDate;
+    @FXML
+    private TextField durationField;
+    @FXML
+    private DatePicker endDate;
+    
+    @FXML
+    private void showDuration() {
+//        int duration = (endDate.getValue().compareTo(startDate.getValue()));
+        long diff = DAYS.between(startDate.getValue(), endDate.getValue());
+        Integer i = (int) (long) diff;
+        durationField.setText(Integer.toString(i) + " days");
+        
+    }
+    
+   
+    @FXML
+    private void showEndDate() {
+        
+    }
+    
     
 }
