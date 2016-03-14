@@ -30,6 +30,11 @@ Alter Table User_Project
 add foreign key (fk_user_proj_user)
 references User(UserID);
 
+Alter Table User_Project
+add foreign key (fk_user_proj_proj)
+references Project(ProjectID);
+
+
 CREATE TABLE Dependancy()
 Event int not null,
 dependant_on int not null);
