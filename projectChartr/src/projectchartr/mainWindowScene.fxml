@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.canvas.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
@@ -42,11 +43,7 @@
                                  <content>
                                     <AnchorPane prefHeight="260.0" prefWidth="402.0">
                                        <children>
-                                          <SubScene height="260.0" width="402.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-203.0" AnchorPane.topAnchor="0.0">
-                                            <root>
-                                              <Region />
-                                            </root>
-                                          </SubScene>
+                                          <Canvas height="261.0" width="402.0" />
                                        </children>
                                     </AnchorPane>
                                  </content>
@@ -63,11 +60,7 @@
                                  <content>
                                     <AnchorPane prefHeight="260.0" prefWidth="402.0">
                                        <children>
-                                          <SubScene height="260.0" width="402.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-203.0" AnchorPane.topAnchor="0.0">
-                                             <root>
-                                                <Region />
-                                             </root>
-                                          </SubScene>
+                                          <Canvas height="261.0" width="402.0" />
                                        </children>
                                     </AnchorPane>
                                  </content>
@@ -84,11 +77,7 @@
                                  <content>
                                     <AnchorPane prefHeight="260.0" prefWidth="402.0">
                                        <children>
-                                          <SubScene height="260.0" width="402.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-203.0" AnchorPane.topAnchor="0.0">
-                                             <root>
-                                                <Region />
-                                             </root>
-                                          </SubScene>
+                                          <Canvas height="261.0" layoutX="1.0" layoutY="-1.0" width="402.0" />
                                        </children>
                                     </AnchorPane>
                                  </content>

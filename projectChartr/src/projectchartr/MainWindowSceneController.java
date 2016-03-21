@@ -7,7 +7,9 @@ package projectchartr;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.*;
+import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -16,6 +18,9 @@ import javafx.fxml.Initializable;
  */
 public class MainWindowSceneController implements Initializable {
 
+    @FXML private Button addEvBttn, editEvBttn, remEvBttn, openButton, saveButton, printButton;
+    @FXML private ListView eventsList;
+    @FXML private Label baseLineLabel;
     /**
      * Initializes the controller class.
      */

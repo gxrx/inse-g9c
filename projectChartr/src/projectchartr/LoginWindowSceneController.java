@@ -7,7 +7,9 @@ package projectchartr;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.*;
+import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -15,7 +17,13 @@ import javafx.fxml.Initializable;
  * @author GarethAllenStringer
  */
 public class LoginWindowSceneController implements Initializable {
-
+    @FXML private Label projectName;
+    @FXML private TextField usernameField;
+    @FXML private PasswordField passwordField;
+    @FXML private CheckBox rememberMeCheckBox;
+    @FXML private Button loginButton, registerButton;
+    @FXML private Hyperlink forgottenDetailsHyperlink;
+    
     /**
      * Initializes the controller class.
      */

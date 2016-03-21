@@ -7,7 +7,9 @@ package projectchartr;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.fxml.*;
+import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -15,7 +17,10 @@ import javafx.fxml.Initializable;
  * @author GarethAllenStringer
  */
 public class ExistingProjectsSceneController implements Initializable {
-
+    @FXML private Button newProjectButton;
+    
+    
+    
     /**
      * Initializes the controller class.
      */

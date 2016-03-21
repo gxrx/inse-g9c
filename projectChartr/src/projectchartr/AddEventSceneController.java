@@ -19,26 +19,11 @@ import javafx.scene.input.MouseEvent;
  * @author GarethAllenStringer
  */
 public class AddEventSceneController implements Initializable {
-    @FXML
-    private DatePicker startDateField;
-    @FXML
-    private DatePicker endDateField;
-    @FXML
-    private TextField durationField;
-    @FXML
-    private TextField eventNameField;
-    @FXML
-    private TextField eventIDField;
-    @FXML
-    private TextArea noteField;
-    @FXML
-    private ComboBox dependencyField;
-    @FXML
-    private Button previousButton;
-    @FXML
-    private Button nextButton;
-    @FXML
-    private Button submitButton;
+    @FXML private DatePicker startDateField, endDateField;
+    @FXML private TextField durationField, eventNameField, eventIDField;
+    @FXML private TextArea noteField;
+    @FXML private ComboBox dependencyField;
+    @FXML private Button previousButton, nextButton, submitButton;
 
     /**
      * Initializes the controller class.
