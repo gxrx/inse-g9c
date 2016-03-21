@@ -24,17 +24,17 @@
         </rowConstraints>
          <children>
             <Label text="Event Name: " />
-            <DatePicker fx:id="startDate" promptText="dd/mm/yyyy" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextArea prefHeight="200.0" prefWidth="200.0" promptText="Optionally Add Notes Here..." GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <DatePicker fx:id="startDateField" promptText="dd/mm/yyyy" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextArea fx:id="noteField" prefHeight="200.0" prefWidth="200.0" promptText="Optionally Add Notes Here..." GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="10.0" top="10.0" />
                </GridPane.margin>
             </TextArea>
             <HBox alignment="BOTTOM_RIGHT" prefHeight="70.0" prefWidth="491.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <children>
-                  <Button ellipsisString="" mnemonicParsing="false" text="Previous" textOverrun="CLIP" />
-                  <Button mnemonicParsing="false" text="Next" textOverrun="CLIP" />
-                  <Button mnemonicParsing="false" text="Submit" textOverrun="CLIP" />
+                  <Button fx:id="previousButton" ellipsisString="" mnemonicParsing="false" text="Previous" textOverrun="CLIP" />
+                  <Button fx:id="nextButton" mnemonicParsing="false" text="Next" textOverrun="CLIP" />
+                  <Button fx:id="submitButton" mnemonicParsing="false" text="Submit" textOverrun="CLIP" />
                </children>
                <GridPane.margin>
                   <Insets bottom="10.0" />
@@ -46,17 +46,17 @@
             <Label text="Dependency: " GridPane.rowIndex="4" />
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <DatePicker fx:id="endDate" promptText="dd/mm/yyyy" />
+                  <DatePicker fx:id="endDateField" onMouseClicked="#showEndDate" promptText="dd/mm/yyyy" />
                   <Label text="or Days:" />
                   <TextField fx:id="durationField" minWidth="107.0" onMouseClicked="#showDuration" prefHeight="27.0" prefWidth="107.0" promptText="Enter Duration" />
                </children>
             </HBox>
-            <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="dependencyField" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1">
                <children>
-                  <TextField maxWidth="300.0" prefWidth="200.0" promptText="Enter Event Name" />
+                  <TextField fx:id="eventNameField" maxWidth="300.0" prefWidth="200.0" promptText="Enter Event Name" />
                   <Label text="ID:" />
-                  <TextField minWidth="107.0" prefHeight="27.0" prefWidth="107.0" promptText="Enter Event ID" />
+                  <TextField fx:id="eventIDField" minWidth="107.0" prefHeight="27.0" prefWidth="107.0" promptText="Enter Event ID" />
                </children>
             </HBox>
          </children>
