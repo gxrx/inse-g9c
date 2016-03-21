@@ -28,7 +28,7 @@
    <top>
       <BorderPane prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <left>
-            <Label text="Username" BorderPane.alignment="CENTER">
+            <Label fx:id="projectNameLabel" text="Username" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets />
                </BorderPane.margin>
