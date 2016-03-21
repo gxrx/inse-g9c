@@ -47,22 +47,22 @@ public class NewProjectSceneController implements Initializable {
         // Compare Username and Passwords 
         // Open next window if true
         // Show an error if false
+        Properties props = new Properties();
+        props.put("user", "up616531");
+        props.put("password", "");
+        props.put("database", "Test");
+       /* Connection dbSession;
+        try {
+            dbSession = DriverManager.getConnection(
+                    "jdbc:mysql://104.155.100.96:3306/Test",props);
+            System.out.println("Connected to DB! YAY!");
+        } catch (Exception ex) {
+            System.err.println("Failed to connect to DB because reasons");
+        }   */
         
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        Properties props = new Properties();
-        props.put("user", "up616531");
-        props.put("password", "kaymax867");
-        Connection dbSession;
-        try {
-            dbSession = DriverManager.getConnection(
-                    "jdbc:mysql://104.155.100.96:3306",props);
-        } catch (SQLException ex) {
-            Logger.getLogger(NewProjectSceneController.class.getName()).log(Level.SEVERE, null, ex);
-        }   
-        
-      
 }
 }
