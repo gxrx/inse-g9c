@@ -12,6 +12,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import java.sql.*;
+import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -48,6 +52,17 @@ public class NewProjectSceneController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+        Properties props = new Properties();
+        props.put("user", "up616531");
+        props.put("password", "kaymax867");
+        Connection dbSession;
+        try {
+            dbSession = DriverManager.getConnection(
+                    "jdbc:mysql://104.155.100.96:3306",props);
+        } catch (SQLException ex) {
+            Logger.getLogger(NewProjectSceneController.class.getName()).log(Level.SEVERE, null, ex);
+        }   
+        
+      
+}
 }
