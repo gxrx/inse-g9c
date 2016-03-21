@@ -15,7 +15,7 @@
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label text="Username: " />
-                        <TextField />
+                        <TextField fx:id="usernameField" />
                      </children>
                      <VBox.margin>
                         <Insets top="10.0" />
@@ -24,16 +24,16 @@
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label text="Password: " />
-                        <PasswordField />
+                        <PasswordField fx:id="passwordField" />
                      </children>
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
                   </HBox>
-                  <CheckBox mnemonicParsing="false" text="Remember Me?" />
+                  <CheckBox fx:id="rememberMeCheckBox" mnemonicParsing="false" text="Remember Me?" />
                   <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Button  mnemonicParsing="false" text="Login">
+                        <Button fx:id="loginButton" mnemonicParsing="false" text="Login">
                            <HBox.margin>
                               <Insets bottom="10.0" right="10.0" />
                            </HBox.margin>
@@ -41,7 +41,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </Button>
-                        <Button mnemonicParsing="false" text="Register">
+                        <Button fx:id="registerButton" mnemonicParsing="false" text="Register">
                            <HBox.margin>
                               <Insets bottom="10.0" right="10.0" />
                            </HBox.margin>
@@ -54,14 +54,14 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </HBox>
-                  <Hyperlink text="Forgotten Login Details?" />
+                  <Hyperlink fx:id="forgottenDetailsHyperlink" text="Forgotten Login Details?" />
                </children>
             </VBox>
          </children>
       </Pane>
       <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="50.0" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: white;">
          <children>
-            <Label text="Project Chartr" textAlignment="CENTER" textOverrun="CLIP">
+            <Label fx:id="projectName" text="Project Chartr" textAlignment="CENTER" textOverrun="CLIP">
                <font>
                   <Font size="40.0" />
                </font>

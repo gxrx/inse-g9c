@@ -9,11 +9,11 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectchartr.MainWindowSceneController">
    <left>
       <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="175.0" BorderPane.alignment="CENTER">
          <children>
-            <ListView AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ListView fx:id="eventsList" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
          </children>
          <BorderPane.margin>
             <Insets top="10.0" />
@@ -23,7 +23,7 @@
    <bottom>
       <Pane prefHeight="20.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label maxHeight="20.0" minHeight="20.0" prefHeight="20.0" text="Label" />
+            <Label fx:id="baseLineLabel" maxHeight="20.0" minHeight="20.0" prefHeight="20.0" text="Label" />
          </children>
       </Pane>
    </bottom>
@@ -94,12 +94,12 @@
    <top>
       <HBox prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Add Event" />
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Edit Event" />
-            <Button layoutX="69.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Remove Event" textAlignment="CENTER" wrapText="true" />
-            <Button layoutX="128.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Open" />
-            <Button layoutX="187.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Save" />
-            <Button layoutX="246.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Print" />
+            <Button fx:id="addEvBttn" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Add Event" />
+            <Button fx:id="editEvBttn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Edit Event" />
+            <Button fx:id="remEvBttn" layoutX="69.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Remove Event" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="openButton" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Open" />
+            <Button fx:id="saveButton" layoutX="187.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Save" />
+            <Button fx:id="printButton" layoutX="246.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Print" />
          </children>
       </HBox>
    </top>

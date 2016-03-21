@@ -18,7 +18,12 @@ import javafx.scene.input.MouseEvent;
  */
 public class MainWindowSceneController implements Initializable {
 
-    @FXML private Button addEvBttn, editEvBttn, remEvBttn, openButton, saveButton, printButton;
+    @FXML private Button addEvBttn;
+    @FXML private Button editEvBttn;
+    @FXML private Button remEvBttn;
+    @FXML private Button openButton;
+    @FXML private Button saveButton;
+    @FXML private Button printButton;
     @FXML private ListView eventsList;
     @FXML private Label baseLineLabel;
     /**

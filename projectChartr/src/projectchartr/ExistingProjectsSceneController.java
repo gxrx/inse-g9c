@@ -17,10 +17,9 @@ import javafx.scene.input.MouseEvent;
  * @author GarethAllenStringer
  */
 public class ExistingProjectsSceneController implements Initializable {
+    
     @FXML private Button newProjectButton;
-    
-    
-    
+    @FXML private Label projectNameLabel;
     /**
      * Initializes the controller class.
      */

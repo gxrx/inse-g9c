@@ -21,7 +21,8 @@ public class LoginWindowSceneController implements Initializable {
     @FXML private TextField usernameField;
     @FXML private PasswordField passwordField;
     @FXML private CheckBox rememberMeCheckBox;
-    @FXML private Button loginButton, registerButton;
+    @FXML private Button loginButton;
+    @FXML private Button registerButton;
     @FXML private Hyperlink forgottenDetailsHyperlink;
     
     /**
