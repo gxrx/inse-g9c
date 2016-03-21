@@ -24,7 +24,6 @@ public class AddEventSceneController implements Initializable {
     @FXML private TextArea noteField;
     @FXML private ComboBox dependencyField;
     @FXML private Button previousButton, nextButton, submitButton;
-
     /**
      * Initializes the controller class.
      */
@@ -32,7 +31,7 @@ public class AddEventSceneController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }   
-    
+
     @FXML
     private void showDuration() {
 //        int duration = (endDate.getValue().compareTo(startDate.getValue()));
