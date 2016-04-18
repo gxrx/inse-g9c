@@ -17,6 +17,7 @@ public class Main {
         ArrayList<Event> data = new ArrayList();
         int[] p = {2000,3,4};
         int[] y = {4,5,5};
+        /*
         data.add(new Event(1.0, "Event 1", p, y, "Notes", true, 0));
         data.add(new Event(2.0, "Event 2", p, y, "More Notes", false, 1));
         for(Event e : data)
@@ -51,10 +52,39 @@ public class Main {
         System.out.println(project3.getSize()); // expected 1
         project3.addEvent(6.0, event6);
         System.out.println(project3.getSize()); // expected 2
+        */
+        
+        //DEMO
+        System.out.println("DEMO START");
+        //DEMO EVENT CLASS
+        System.out.println("Event Class");
+        System.out.println("Events have an ID, name, start and end dates, notes, a milestone proporty and a duration.");
+        Event eventDemo = new Event(1.6, "Initial Sketches", p, y, "Notes", true, 3);
+        System.out.println("After creating the Event, eventDemo, we can call methods to extract or change data. ");
+        System.out.println("Event ID:" + eventDemo.getID() +", Event Name: " + eventDemo.getEventName() + ", Event Duration:" + eventDemo.getDuration());
+        System.out.println();
+        System.out.println("Events can also have dependancies. Event 1.6 is dependant on 1.5 and 1.4.");
+        Event eventDemo2 = new Event(1.0, "Initial Sketches", p, y, "Notes", true, 3);
+        Event eventDemo3 = new Event(1.0, "Initial Sketches", p, y, "Notes", true, 3);
+        System.out.println("Calling getDependancies");
+        eventDemo.setDependancy(1.5);
+        eventDemo.setDependancy(1.4);
+        eventDemo.getEventDependancy();
+        System.out.println("This operation will be required for the PERT and GANTT charts.");
+   
+        System.out.println("------------------------------------------------");
+        System.out.println("Projet Class");
+        System.out.println("The project class has a set start and end date, and includes an array of vnts.");
+        System.out.println("Adding Events - Calling Project methods.");
+        Project projectDemo = new Project("Project 1,", p, y);
+        projectDemo.addEvent(eventDemo);
+        projectDemo.addEvent(eventDemo2);
+        projectDemo.addEvent(eventDemo3);
+        projectDemo.getEventList();
+
         
         
         
-            
     }
     }
 
