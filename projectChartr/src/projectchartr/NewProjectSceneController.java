@@ -5,6 +5,7 @@
  */
 package projectchartr;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
@@ -16,12 +17,15 @@ import java.sql.*;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 
 /**
  * FXML Controller class
  *
- * @author GarethAllenStringer
  */
 public class NewProjectSceneController implements Initializable {
 
@@ -33,9 +37,9 @@ public class NewProjectSceneController implements Initializable {
     @FXML private Button btnConfirm;
     @FXML private DatePicker dpStartDate, dpEndDate;
     private LocalDate sDate, eDate;
-    @FXML protected void confirmNewProject(ActionEvent e)
+    @FXML protected void confirmNewProject(ActionEvent e) throws IOException
     {
-        sDate = dpStartDate.getValue();
+        /*sDate = dpStartDate.getValue();
         eDate = dpEndDate.getValue();
         
         if(sDate.isAfter(eDate))
@@ -59,7 +63,21 @@ public class NewProjectSceneController implements Initializable {
         } catch (Exception ex) {
             System.err.println("Failed to connect to DB because reasons");
         }   */
-        
+       
+       try {
+           Parent p = FXMLLoader.load(getClass().getResource("mainWindowScene.fxml"));   
+           Stage s = (Stage) btnConfirm.getScene().getWindow();
+           Scene n = new Scene(p);
+           s.close();
+           s.setScene(n);
+           s.show();   
+       }
+           
+       catch (Exception ex)
+       {
+           System.err.print(ex);
+       }
+       
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {

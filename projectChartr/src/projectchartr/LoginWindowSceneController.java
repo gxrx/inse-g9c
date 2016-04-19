@@ -14,7 +14,6 @@ import javafx.scene.input.MouseEvent;
 /**
  * FXML Controller class
  *
- * @author GarethAllenStringer
  */
 public class LoginWindowSceneController implements Initializable {
     @FXML private Label projectName;

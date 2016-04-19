@@ -41,7 +41,7 @@
         </rowConstraints>
          <children>
             <Label text="Project Name: " />
-            <TextField fx:id="txtProjectName" alignment="CENTER_RIGHT" maxWidth="225.0" minWidth="225.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="225.0" translateX="-50.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtProjectName" alignment="CENTER_LEFT" maxWidth="225.0" minWidth="225.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="225.0" translateX="-50.0" GridPane.columnIndex="1" />
             <Label text="Start Date: " GridPane.rowIndex="1" />
             <DatePicker fx:id="dpStartDate" maxWidth="225.0" minWidth="225.0" prefWidth="225.0" translateX="-50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="End Date: " GridPane.rowIndex="2" />

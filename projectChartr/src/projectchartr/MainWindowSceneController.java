@@ -5,16 +5,20 @@
  */
 package projectchartr;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.*;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
  *
- * @author GarethAllenStringer
  */
 public class MainWindowSceneController implements Initializable {
 
@@ -29,6 +33,24 @@ public class MainWindowSceneController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    
+    @FXML
+    protected void addEvButton(ActionEvent e) throws IOException
+    {
+        try {
+           Parent p = FXMLLoader.load(getClass().getResource("addEventScene.fxml"));   
+           Stage s = new Stage();
+           Scene n = new Scene(p);
+           s.setScene(n);
+           s.show();   
+       }
+           
+       catch (Exception ex)
+       {
+           System.err.print(ex);
+       }
+       
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

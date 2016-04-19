@@ -84,7 +84,7 @@
          <children>
             <HBox layoutX="597.0" prefHeight="75.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="addEvBttn" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Add Event" />
+                  <Button fx:id="addEvBttn" onAction="#addEvButton" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Add Event" />
                   <Button fx:id="editEvBttn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Edit Event" />
                   <Button fx:id="remEvBttn" layoutX="69.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Remove Event" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="openButton" layoutX="128.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="100.0" text="Open" />

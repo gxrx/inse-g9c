@@ -13,13 +13,12 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author GarethAllenStringer
  */
 public class ProjectChartr extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("addEventScene.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("existingProjectsScene.fxml"));
         
         Scene scene = new Scene(root);
         

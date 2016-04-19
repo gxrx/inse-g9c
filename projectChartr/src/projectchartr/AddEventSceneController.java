@@ -16,7 +16,6 @@ import javafx.scene.input.MouseEvent;
 /**
  * FXML Controller class
  *
- * @author GarethAllenStringer
  */
 public class AddEventSceneController implements Initializable {
     @FXML private DatePicker startDateField;
