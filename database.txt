@@ -1,0 +1,41 @@
+CREATE TABLE Event
+(EventID mediumint(8) NOT NULL auto_increment PRIMARY KEY,
+Event_name varchar(25) NOT NULL,
+fk_event_project int,
+StartDate DATE,
+EndDate DATE,
+Duration int,
+Milestone boolean);
+
+ALTER TABLE Event
+	ADD FOREIGN KEY (fk_event_project)
+	REFERENCES Project(ProjectID);
+
+
+CREATE TABLE User
+(UserID mediumint(8) NOT NULL auto_increment PRIMARY KEY,
+f_name varchar(255) NOT NULL,
+l_name varchar(255) NOT NULL,
+Email varchar(255) NOT NULL);
+
+CREATE TABLE Project
+(ProjectID mediumint (8) NOT NULL auto_increment PRIMARY KEY,
+proj_name varchar(255) NOT NULL);
+
+CREATE TABLE User_Project(
+fk_user_proj_user int not null,
+fk_user_proj_proj int not null);
+
+Alter Table User_Project
+add foreign key (fk_user_proj_user)
+references User(UserID);
+
+Alter Table User_Project
+add foreign key (fk_user_proj_proj)
+references Project(ProjectID);
+
+
+CREATE TABLE Dependancy()
+Event int not null,
+dependant_on int not null);
+
