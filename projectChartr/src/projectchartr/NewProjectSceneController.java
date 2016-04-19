@@ -71,6 +71,7 @@ public class NewProjectSceneController implements Initializable {
            s.close();
            s.setScene(n);
            s.show();   
+           s.setTitle("Work Breakdown Tree");
        }
            
        catch (Exception ex)

@@ -42,6 +42,7 @@ public class MainWindowSceneController implements Initializable {
            Stage s = new Stage();
            Scene n = new Scene(p);
            s.setScene(n);
+           s.setTitle("Add Event");
            s.show();   
        }
            

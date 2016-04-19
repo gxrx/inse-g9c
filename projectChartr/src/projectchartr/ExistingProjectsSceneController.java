@@ -13,7 +13,6 @@ import javafx.fxml.*;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -36,6 +35,7 @@ public class ExistingProjectsSceneController implements Initializable {
            Scene n = new Scene(p);
            s.close();
            s.setScene(n);
+           s.setTitle("New Project");
            s.show();   
        }
            
