@@ -1,0 +1,32 @@
+Drawing to a Java FX window - or canvas
+
+Methods:
+drawRectangle(x, y, width, height) // draw a rectangle
+addText(Rectangle, ID, Name)  // add text to the rectangle - including Event id and name.
+getNumUniqId(project) - returns the number of initial branches out WBT will need. (eg. [1.0, 1.1, 2.0] would return 2)
+orderEvents() - orders the evens arrayList so we can draw rectangles one by one. (1.0, 1.1, 2.0, 2.1, 2.1.1, 3.0 etc...)
+1) add the project title in a box. Top Middle of window.
+
+
+2) split the window into virtual columns being the number of unique first character ID.
+
+3) draw events
+-make sure events are ordered first.
+
+for each unique ID
+	for each event 
+		see if the event is a sub tree.
+			if yes, create new virtual column.
+		draw a rect (column width x the unique ID) - (column width / 2), prevHeight)
+		addTitletoBox(rectangle, event.getid, event.getname)
+		addArrow(this-1 or TITLE, this)
+		prevHeight =+ 30 (space things out)
+		addTitleToBox(rectangle, event.getID, event.getName();
+		addArrow(this-1 or TITLE, this)
+	prevheight = 100
+
+
+
+
+
+
